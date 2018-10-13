@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.2.4" />
+    <PackageReference Include="BouncyCastle.NetCore" Version="1.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SsoDemo.Authorization.Contract\SsoDemo.Authorization.Contract.csproj" />
+    <ProjectReference Include="..\SsoDemo.Authorization.Controller\SsoDemo.Authorization.Controller.csproj" />
+    <ProjectReference Include="..\SsoDemo.Authorization.Data\SsoDemo.Authorization.Data.csproj" />
+    <ProjectReference Include="..\SsoDemo.Authorization.Domain\SsoDemo.Authorization.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
